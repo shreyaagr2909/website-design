@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Website</title>
+    <link rel="stylesheet" href="style_index.css">
+  </head>
+  <body>
+
+    <!-- ------------------Main page------------------------------------------- -->
+    <div class="banner">
+      <header>  
+        <a href="#" class="logo"> Agarwal & Agarwal Creations</a>
+        <div class="toggle">Menu</div>
+      </header>
+      <img src="images\Backgroug2.jpg" alt="banner">
+      <div class="content">
+        <h2>Your Pooja Shop</h2>
+        <p>"We are here to provide you all the best of the pooja materials which not only help you find a one stop solution to fulfill you pooja materail requirement but also guarantee the premium quality products. We provide all the pooja materials ranging from agarbatti to gods dresses and murti's. We have a wide range of god's furniture and mala's." </p>
+      </div>
+    </div>
+    <!-- ------------------About US page------------------------------------------- -->
+    <section class="about">
+      <div class="contentBox">
+        <h2 class="heading">About Us</h2>
+        <p class="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore totam consectetur quis, in ea itaque quibusdam dolorum nemo sit voluptatibus natus perspiciatis eaque iste nihil culpa corporis eveniet vel. A. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur aperiam quasi odit voluptatibus vero, cum exercitationem facere suscipit, beatae recusandae sed autem earum ex molestias officia maxime illo voluptate corporis! <br></br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita rem quam nisi iste dolores beatae, eaque soluta ratione voluptas magni minus nihil dolore commodi dolor magnam iusto. Accusantium, laborum. Deleniti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam odio ratione est eum, praesentium dolores ab provident officia aut aliquam laudantium amet ipsa, accusamus ut minus voluptates assumenda mollitia tempore!</p>
+      </div>
+      <img src="images\panditpuja.jpg" alt="banner" class="imgbox">
+    </section>
+
+    <!-- ------------------Services page------------------------------------------- -->
+
+    <section class="services">
+      <h2 class="heading">Our Services</h2>
+      <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat numquam, eius beatae itaque optio consectetur vero repudiandae laborum similique dignissimos suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem dicta inventore accusantium ab possimus adipisci incidunt eum minima deleniti perferendis asperiores mollitia aperiam, suscipit, soluta voluptatum sapiente! Magni, omnis officiis. Deleniti beatae inventore ut cumque sapiente, fuga velit eveniet.</p>
+      <div class="container">
+        <div class="serviceBox">
+          <div>
+            <img src="images\pojamaterial.png" alt="banner">
+            <h2>Pooja Materials</h2>
+          </div>   
+        </div>
+
+        <div class="serviceBox">
+          <div>
+            <img src="images\hawan.png" alt="banner">
+            <h2>Hawan</h2>
+          </div>   
+        </div>
+
+        <div class="serviceBox">
+          <div>
+            <img src="images\festival.png" alt="banner">
+            <h2>Festivals</h2>
+          </div>   
+        </div>
+      </div>
+    </section>
+
+    <!-- ------------------Contact page------------------------------------------- -->
+
+    <section class="contact">
+      <h2 class="heading">Contact Us</h2>
+      <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti eaque ullam, fugit qui voluptas, quos sequi recusandae quae veritatis aspernatur, omnis perspiciatis ab fugiat tempore dolore quasi labore porro sint!Lorem</p>
+    </section>
+
+    <section class="footer">
+      <p class="text">Copyright(c) : Agarwal & Agarwal Creations</p>
+    </section>
+  </body>
+
+  <script language="JavaScript">
+ 
+    window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+      //document.onkeydown = function(e) {
+        // "I" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          disabledEvent(e);
+        }
+        // "J" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          disabledEvent(e);
+        }
+        // "S" key + macOS
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+          disabledEvent(e);
+        }
+        // "U" key
+        if (e.ctrlKey && e.keyCode == 85) {
+          disabledEvent(e);
+        }
+        // "F12" key
+        if (event.keyCode == 123) {
+          disabledEvent(e);
+        }
+      }, false);
+      function disabledEvent(e){
+        if (e.stopPropagation){
+          e.stopPropagation();
+        } else if (window.event){
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+  </script>
+
+</html>
