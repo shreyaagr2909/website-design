@@ -1,0 +1,232 @@
+*{
+  /* background: #fd9904; */
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+  font-family: Arial;
+}
+
+.banner{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fd9904;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}
+
+.banner .content{
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+  padding-right: 20px;
+}
+
+.banner .content h2{
+  /* color: rgb(253, 9, 9); */
+  color: white;
+  font-size: 35px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.banner .content p{
+  /* color: rgb(17, 6, 1); */
+  color: white;
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+.banner header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+.banner header .logo{
+  /* color: rgb(37, 51, 253); */
+  /* padding-left: 0; */
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.banner header .toggle{
+  position: relative;
+  width: 61px;
+  height: 30px;
+  background: #fd9904;
+  color: white;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* 11111111111111111111111111111111111111111 ABOUT 111111111111111111111111111111 */
+
+.about{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.about .contentBox{
+  background: hsl(0, 100%, 27%);
+  padding: 100px;
+  width: 50%;
+}
+
+.heading{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.text{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding-bottom: 20px;
+}
+
+.about .imgBox{
+  /* background-image: url("images\panditpuja.jpg"); */
+  width: 50%;
+  /* height: 100%; */
+  background-size: cover;
+  background-position: center;
+}
+
+/* 11111111111111111111111111111111111111111 Services 111111111111111111111111111111 */
+
+.services{
+  background: #12222d;
+  padding: 100px;
+  text-align: center;
+}
+
+.services .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.services .container .serviceBox{
+  position: relative;
+  background: #fff;
+  width: 350px;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.services .container .serviceBox img{
+  max-width: 200px;
+}
+
+.services .container .serviceBox h2{
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* 11111111111111111111111111111111111111111 contact 111111111111111111111111111111 */
+
+.contact{
+    padding: 100px;
+    background: #013b2d;
+    text-align: center;
+}
+
+/* 11111111111111111111111111111111111111111 footer 111111111111111111111111111111 */
+
+.footer{
+  padding-top: 9px;
+  background: #1b0046;
+  text-align: center;
+}
+
+/* 11111111111111111111111111111111111111111 responsive 111111111111111111111111111111 */
+
+@media (max-width : 991px){
+  
+  .banner{
+    padding: 50px;
+  }
+  .banner header{
+    padding: 20px 50px;
+  }
+
+  .banner .content h2{
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 36px;
+  }
+
+  .banner .content p{
+    font-size: 16px;
+    padding-left: 20px;
+  }
+
+  .about{
+    flex-direction: column;
+  }
+
+  .about .contentBox,
+  .about .imgBox{
+    width: 100%;
+    /* padding: 50px; */
+    min-height: 400px;
+    text-align: center;
+  }
+
+  .services{
+    padding: 50px;
+  }
+
+  .services .container{
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .services .container .serviceBox{
+    margin: 30px;
+    width: 300px;
+    height: 350px;
+  }
+
+  .contact{
+    padding: 50px;
+  }
+}
